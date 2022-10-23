@@ -1,0 +1,221 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(8, 59, 8);
+}
+#iconBox{
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+#h1header{
+    float: right;
+    line-height: 100px;
+    padding: 0 15px;
+    color: rgb(8, 59, 8);
+
+}
+#imgheader{
+    height: 100%;
+    width: 35%;
+    border-radius: 50%;
+    float: right;
+}
+nav{
+    width: 80%;
+    text-align: center;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+   display: inline-block;
+  
+   
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 300px;
+    text-align: center;
+  
+
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 100%;
+  
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(95, 170, 95);
+    border-top: 3px solid white;
+    animation: Backgroundcolor 5s  infinite ;
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+    float: left;
+
+}
+aside img{
+    width: 90%;
+    height: 300px;
+}
+#h1Aside{
+    padding: 20px 0;
+    border-bottom: 2px solid green; 
+}
+#article{
+    float: right;
+    width: 70%;
+    height: 450px;
+    position: relative;
+}
+#Box{
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    height: 180px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.418);
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#h1Box{
+    border-bottom: 3px solid green;
+    padding: 15px 0px;
+}
+article div p{
+    margin-top: 8px;
+    text-align: justify;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:500;
+}
+#contactBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  
+    
+}
+#contactBox img{
+    width: 35px;
+    height: 35px;
+    padding: 0px 4px 10px 4px;
+    border-bottom: 2px double green ;
+}
+#contactBox img:hover{
+   width: 45px;
+   height: 45px;
+   border-bottom: 2px solid black ;
+}
+footer{
+    background-color: rgba(128, 128, 128, 0.247);
+    height: 200px;
+    width: 100%;
+    
+    
+   
+}
+footer h3{
+    text-align: center;
+    padding-top: 90px;
+
+
+}
+
+@keyframes Backgroundcolor{
+    0%{
+        background-color: rgb(113, 161, 113);
+    }
+    25%{
+        background-color: rgb(85, 168, 85);
+    }
+    50%{
+        background-color: rgb(63, 163, 63);
+    }
+    75%{
+        background-color: rgb(36, 160, 36);
+    }
+    100%{
+        background-color: green;
+    }
+}
+@media only screen and (max-width:1530px) and (min-width:900px) {
+    #iconBox{
+        width: 35%;  
+    }
+     nav li{
+        width: 120px;
+        
+     }
+     #article{
+        width: 65%;
+     }
+    aside{
+        width: 35%;
+    }
+}
+@media only screen and (max-width:900px){
+    #iconBox{
+        width: 40%;  
+    }
+    nav li{
+        width: 100px;
+     }
+     #article{
+        width: 60%;
+     }
+    aside{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:787px){
+    header,main{
+        height: auto;
+    }
+    #iconBox{
+        width: 100%;
+
+    }
+    #h1header{
+        float: none;
+       text-align: center;
+    }
+    #imgheader{
+        float: none;
+        margin-left: 33%;
+    }
+    span a{
+        text-decoration: none;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+   #article{
+    height: 230px;
+    width: 100%;
+   }
+   footer {
+    width: 100%;
+    margin-top: 60px;
+   }
+}
